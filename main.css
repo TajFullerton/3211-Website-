@@ -4,7 +4,7 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box;
-    margin-top: 6px; 
+    margin-top: 16px; 
     margin-bottom: 16px; 
   }
   
@@ -57,7 +57,7 @@ width: calc(100% - 60px);
     float: left;
     text-transform: uppercase;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     padding: 0%; 
 }
