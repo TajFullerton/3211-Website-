@@ -32,6 +32,7 @@ input[type=text], select, textarea {
     display: block;
     padding: 0 25px;
     font-size: 14px;
+    font-family: helvetica;
     line-height: 30px;
     position: relative;
     z-index: 1;
@@ -58,6 +59,7 @@ width: calc(100% - 60px);
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
+    font-family: Helvetica;
     text-align: left;
     padding: 0%; 
 }
@@ -90,4 +92,34 @@ p{
   border-bottom: solid 3px red;
   padding-top: 1%;
   padding-left: 1%;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rosybrown;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.sign_in {
+
+font-family: helvetica;
+
 }
