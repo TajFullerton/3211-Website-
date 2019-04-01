@@ -25,5 +25,18 @@
     <input type="password" name="user-pw" id="user-pw">
     <button type="submit">Login</button>
   </form>
+  <script>
+        function check(form)
+        {
+            if(form.username.value == "123" && form.user-pw.value == "123")
+            {
+                window.open('http://www.google.com')
+            }
+            else
+            {
+                alert("Wrong username and/or password")
+            }
+        }
+    </script>
 </div>
 </html>
