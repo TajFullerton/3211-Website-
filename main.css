@@ -123,3 +123,14 @@ button {
 font-family: helvetica;
 
 }
+
+.Clock {
+  color: black;
+  font-family: helvetica;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0px 5px 0px 5px
+}

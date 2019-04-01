@@ -17,26 +17,30 @@
 </div>
 <br>
 <div class="sign_in">
-  <form>
+  <form onsubmit="return validate()" action="timeclock.html">
     <label for="username">Username:</label>
     <input type="text" name="username" id="username">
 
     <label for="user-pw">Password:</label>
-    <input type="password" name="user-pw" id="user-pw">
+    <input type="password" name="user-pw" id="userpw">
     <button type="submit">Login</button>
   </form>
   <script>
-        function check(form)
+    function validate()
+    {
+        var username = document.getElementById("username");
+        var userpw = document.getElementById("userpw");
+
+        if (username.value == "" || userpw.value == "")
         {
-            if(form.username.value == "123" && form.user-pw.value == "123")
-            {
-                window.open('http://www.google.com')
-            }
-            else
-            {
-                alert("Wrong username and/or password")
-            }
+            alert("Please enter both a username and a password")
+            return false;
         }
-    </script>
+        else
+        {
+            true;
+        }
+    }
+  </script>
 </div>
 </html>
