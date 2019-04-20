@@ -1,3 +1,16 @@
+<?php
+  session_start();
+  
+  if(!isset($_SESSION['username']))
+  {
+    header("location: http://localhost/3211-Website-/employee.html");
+  }
+  else
+  {
+    echo "Welcome ".$_SESSION['username'];
+  }
+?>
+
 <!DOCTYPE html>
 
 <html>
