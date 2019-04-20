@@ -18,12 +18,12 @@
 </div>
 <br>
 <div class="sign_in">
-  <form onsubmit="return validate()" action="timeclock.html">
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username">
+  <form action="process.php" method="POST">
+    <label for="user">Username:</label>
+    <input type="text" name="user" id="user">
 
-    <label for="user-pw">Password:</label>
-    <input type="password" name="user-pw" id="userpw">
+    <label for="pass">Password:</label>
+    <input type="password" name="pass" id="pass">
     <button type="submit">Login</button>
   </form>
   <notice>
