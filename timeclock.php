@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<div class="welcome-header">
 <?php
   session_start();
   
@@ -7,10 +9,10 @@
   }
   else
   {
-    echo "Welcome ".$_SESSION['username'];
+    echo "Welcome ".$_SESSION['username'] . "ID: ".$_SESSION['id'];
   }
 ?>
-
+</div>
 <!DOCTYPE html>
 
 <html>
@@ -73,10 +75,11 @@ function showTime(){
 </a>
 <br>
 <div class="clockin">
-<form>
+<form action=clockin.php method=POST>
     <button type=submit> Clock in </button>
+</form>
+<form action=clockout.php method=POST>
     <button type=submit> Clock out </button>
-    
 </form>
 </div>
 <br>

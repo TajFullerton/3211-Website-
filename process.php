@@ -18,6 +18,7 @@
   if ($row['username'] == $username && $row['password'] == $password ){
       echo "Login success! Welcome ".$row['username'];
       $_SESSION['username'] = $username;
+      $_SESSION['id'] = $row['id'];
       header('location: http://localhost/3211-Website-/timeclock.php');
       die;
   } else {

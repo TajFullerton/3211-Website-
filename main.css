@@ -134,3 +134,9 @@ font-family: helvetica;
 .clockin {
   display: block;
 }
+
+.welcome-header {
+  color: black;
+  font-family: helvetica;
+  font-size: 40 px;
+}
