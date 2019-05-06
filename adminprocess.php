@@ -23,7 +23,7 @@
       echo "Please enter a password!";
   }
   elseif ($row['username'] == $username && $row['password'] == $password ){
-    echo "Login success! Welcome ".$row['username'];
+    echo "Login was successful! Welcome ".$row['username'];
     $_SESSION['username'] = $username;
     header('location: http://localhost/3211-Website-/reports.php');
     die;
